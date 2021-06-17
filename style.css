@@ -1,7 +1,79 @@
 @charset "urf-8";
 
+/* Color */
+:root {
+  --color-white: #ffffff;
+  --color-black: #000;
+  --color-red: #ff0000;
+}
+
 /* reset */
 * {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   margin: 0;
   padding: 0;
 }
@@ -50,9 +122,9 @@ button:focus {
 /* layout */
 body {
   font-family: "Noto Sans KR", sans-serif;
-  background-color: #ddd;
+  background-color: var(--color-white);
   font-size: 14px;
-  color: #000;
+  color: var(--color-black);
   line-height: 1.4;
 }
 
@@ -73,12 +145,11 @@ body {
 /* Header */
 header {
   width: 100%;
-  background: red;
   padding: 0 40px;
   box-sizing: border-box;
   height: 100px;
   line-height: 100px;
-  color: #fff;
+  color: var(--color-white);
   z-index: 100;
   position: fixed;
   top: 0;
@@ -99,7 +170,7 @@ header .menuOpen span {
   display: block;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: var(--color-white);
   position: absolute;
   top: 0;
   left: 0;
@@ -138,7 +209,7 @@ header .langs li:nth-child(1) {
 }
 
 header .langs li:nth-child(2) {
-  color: #ddd;
+  color: var(--color-white);
 }
 
 header .langs li a {
@@ -159,6 +230,7 @@ header .right li {
 
 header .right li:nth-child(2) {
   margin-right: 0;
+  margin: -20px;
 }
 
 header .right li p {
@@ -187,4 +259,119 @@ header .right li .logo a img {
 
 header .right li .logo a img:nth-child(2) {
   opacity: 0;
+}
+
+/* visual */
+.visual {
+  color: var(--color-white);
+}
+
+.visual .slide li {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.visual .slide li img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* visual maintext */
+.visual .slide .mainText {
+  position: absolute;
+  top: 35%;
+  right: 18%;
+  width: 25%;
+}
+
+.visual .slide .mainText strong {
+  display: block;
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.visual .slide .mainText > p {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.8;
+  margin-bottom: 70px;
+}
+
+.visual .slide .mainText .num {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.visual .slide .mainText .num span {
+  position: absolute;
+  top: -10px;
+  display: inline-block;
+  padding: 10px 4px;
+  opacity: 0;
+}
+
+.visual .slide .mainText .num .message {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+/* 비주얼 공통 하단 메뉴 */
+.visual .menu {
+  position: absolute;
+  left: 4px;
+  bottom: 7px;
+  font-size: 21px;
+  padding: 7px;
+  overflow: hidden;
+}
+
+.visual .menu:after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-white);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: bar 4.5s infinite;
+}
+
+@keyframes bar {
+  0% {
+    width: 0px;
+  }
+}
+
+.visual .menu li {
+  float: left;
+  padding-right: 20px;
+}
+
+.visual .menu li:nth-child(2) {
+  padding-right: 130px;
+}
+
+.visual .menu li:nth-child(3) {
+  padding-right: 0;
+}
+
+.visual .menu li span i {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.visual .menu li p {
+  font-size: 28px;
+}
+
+.visual .menu:nth-child(2) span i {
+  margin-right: 22px;
 }
