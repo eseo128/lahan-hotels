@@ -5,6 +5,7 @@
   --color-white: #ffffff;
   --color-black: #000;
   --color-red: #ff0000;
+  --color-beige: #a68164;
 }
 
 /* reset */
@@ -122,7 +123,6 @@ button:focus {
 /* layout */
 body {
   font-family: "Noto Sans KR", sans-serif;
-  background-color: var(--color-white);
   font-size: 14px;
   color: var(--color-black);
   line-height: 1.4;
@@ -435,4 +435,141 @@ header .right li .logo a img:nth-child(2) {
 
 .visual .slide li.slick-active img {
   animation: scaleani 4.5s;
+}
+
+/* section */
+.introduce {
+  width: 88%;
+  margin: 130px auto 0;
+}
+
+.introduce .title {
+  font-size: 32px;
+  line-height: 1.6;
+  margin-bottom: 100px;
+}
+
+.introduce .roomInfo {
+  width: 100%;
+  height: 884px;
+}
+
+.introduce .roomInfo .tab {
+  text-transform: uppercase;
+  width: 380px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  display: flex;
+}
+
+.introduce .roomInfo .tab li {
+  width: 40%;
+  margin-right: 3%;
+}
+
+.introduce .roomInfo .tab li:nth-child(2) {
+  margin-right: 0;
+}
+
+.introduce .roomInfo .tab li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+.introduce .roomInfo .tab li.on {
+  color: var(--color-beige);
+}
+
+/* 글자 수 만큼 바가 생기기위해 span으로 감쌈 */
+.introduce .roomInfo .tab li a span {
+  display: inline-block;
+  position: relative;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.introduce .roomInfo .tab li a span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-beige);
+  transition: all 0.5s;
+}
+
+.introduce .roomInfo .tab li a span:hover:after {
+  width: 100%;
+}
+
+/* introduce tabBox */
+.introduce .roomInfo .tabBox {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  display: none;
+  background: var(--color-red);
+}
+
+.introduce .roomInfo .tabBox.on {
+  display: block;
+}
+
+.introduce .roomInfo .tabBox .deluxe {
+  overflow: hidden;
+  width: 100%;
+}
+
+.introduce .roomInfo .tabBox .deluxe .photo {
+  float: left;
+  width: 60%;
+  position: relative;
+}
+
+.introduce .roomInfo .tabBox .deluxe .photo img {
+  width: 100%;
+}
+
+.introduce .roomInfo .tabBox .deluxe .photo .showBox {
+  width: 25%;
+  position: absolute;
+  left: 8%;
+  bottom: 18%;
+  color: var(--color-white);
+  letter-spacing: 1.5px;
+}
+
+.introduce .roomInfo .tabBox .deluxe .photo .showBox .name {
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.33);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.introduce .roomInfo .tabBox .deluxe .photo .showBox .name:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-white);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: bar 4.4s;
+}
+
+.introduce .roomInfo .tabBox .deluxe .photo .showBox .btn {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.introduce .roomInfo .tabBox .deluxe .txtinfo {
+  float: right;
+  width: 40%;
+  text-align: center;
+  background: blue;
+  margin-top: 180px;
 }
