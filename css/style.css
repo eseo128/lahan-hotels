@@ -293,6 +293,7 @@ header .right li .logo a img:nth-child(2) {
   margin-bottom: 30px;
   font-weight: 500;
   letter-spacing: 2px;
+  animation: opa 4.5s;
 }
 
 .visual .slide .mainText > p {
@@ -317,7 +318,7 @@ header .right li .logo a img:nth-child(2) {
   opacity: 0;
 }
 
-.visual .slide .mainText .num .message {
+.visual .slide .mainText .message {
   font-size: 26px;
   line-height: 1.2;
 }
@@ -328,8 +329,9 @@ header .right li .logo a img:nth-child(2) {
   left: 4px;
   bottom: 7px;
   font-size: 21px;
-  padding: 7px;
+  padding-bottom: 7px;
   overflow: hidden;
+  width: 40%;
 }
 
 .visual .menu:after {
@@ -374,4 +376,64 @@ header .right li .logo a img:nth-child(2) {
 
 .visual .menu:nth-child(2) span i {
   margin-right: 22px;
+}
+
+/* animation */
+@keyframes trans {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+}
+.visual .slide .slick-active .mainText .num span {
+  animation: trans 4.5s;
+}
+
+@keyframes opa {
+  0% {
+    opacity: 0;
+  }
+}
+
+.visual .slide .slick-active .mainText strong {
+  animation: opa 3s;
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.visual .slide .slick-active .mainText > p {
+  animation: slide-up 1.5s;
+}
+
+@keyframes scaleani {
+  0% {
+    transform: scale(1.1);
+  }
+}
+
+.visual .slide li.slick-active img {
+  animation: scaleani 4.5s;
 }
