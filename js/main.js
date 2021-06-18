@@ -1,4 +1,13 @@
-//slick.js
+
+//*preventDefault 는 기본으로 정의된 이벤트를 작동하지 못하게 하는 메서드
+
+$(document).on('click', 'a[href="#"]', function (e) {
+    e.preventDefault();
+});
+
+
+
+// slick.js
 
 $(function(){
      $('.visual .slide').slick({
@@ -11,3 +20,15 @@ $(function(){
         pauseOnFocus: false   
     });
 });
+
+//탭메뉴
+
+$(function() {
+    $('.introduce .roomInfo .tab li a').on('click', function(){ 
+       var num = $('.introduce .roomInfo .tab li a').index($(this)); 
+        //.introduce .roomInfo .tab li a의 갯수를 센후 변수(num)에저장 -> .index($(this)); 갯수를세주는 메소드
+       $('.introduce .roomInfo .tabBox').removeClass('on'); //모든 탭 닫음
+       $('.introduce .roomInfo .tabBox:eq(' + num + ')').addClass('on'); // eq()메소드는 인덱스값을 사용해 원하는 위치의 요소를 선택해서 가져올 수 있는 선택 메소드임
+    });
+});
+
