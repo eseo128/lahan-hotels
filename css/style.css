@@ -570,7 +570,7 @@ header .right li .logo a img:nth-child(2) {
   float: right;
   width: 40%;
   text-align: center;
-  margin-top: 180px;
+  margin-top: 120px;
 }
 
 .introduce .roomInfo .tabBox .deluxe .txtinfo .titleBox {
@@ -602,4 +602,43 @@ header .right li .logo a img:nth-child(2) {
 
 .introduce .roomInfo .tabBox .deluxe .txtinfo .inner_detail li p{
   font-size: 17px;
+}
+
+/* introduce .motion*/
+
+@keyframes slide-up2{
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+.introduce .title.motion{
+  animation: slide-up2 1.5s;
+}
+
+.introduce .roomInfo.motion{
+  animation: slide-up2 0.8s;
+}
+
+.introduce .roomInfo.motion .tabBox .deluxe .photo .showBox .name{
+  animation: slide-up2 1.5s;
+}
+
+.introduce .roomInfo.motion .tabBox .deluxe .txtinfo .titleBox p{
+  animation: slide-up2 1.6s;
+}
+
+.introduce .roomInfo.motion .tabBox .deluxe .txtinfo .inner_detail li{
+  animation: slide-up2 2s;
+}
+
+.introduce .roomInfo.motion .tabBox .deluxe .txtinfo .inner_detail li:nth-child(2){
+  animation: slide-up2 2.2s;
+}
+
+.introduce .roomInfo.motion .tabBox .deluxe .txtinfo .inner_detail li:nth-child(3){
+  animation: slide-up2 2.4s;
 }

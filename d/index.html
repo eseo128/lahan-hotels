@@ -1,333 +1,474 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eunseo's Portfolio</title>
-    <meta name="description" content="Portfolio for world-renowned software engineer Eunseo">
-    <meta name="author" content="Eunseo" />
-    <link rel="icon" type="image/png" href="imgs/favicon1.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- Google Fonts Open Sans -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans:wght@400;600;700&family=Roboto&display=swap"
-    rel="stylesheet">
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/60894a74d4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-    <script src="src/main.js" defer></script>
+    <title>현대라한호텔_강의촬영진행용</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    
+    <!--script-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/script_main.js"></script>
 </head>
-
 <body>
-
-
-        <!-- Navbar -->
-        <nav id="navbar">
-            <div class="navbar__logo">
-                <i class="fas fa-seedling"></i>
-                <a href="#">EUNSEO</a>
+    <div class="wrap">
+        <header>
+            <a href="#" class="menuOpen en">
+                <span class="top"></span>
+                <span class="mid"></span>
+                <span class="bot"></span>
+            </a>
+           <!--menuOpen-->
+           <div class="menuWrap">
+               <a href="#" class="close"><img src="images/close.png" alt="닫기">Close</a>
+               <div class="menuWrap_left">
+                   <ul class="tit en_1">
+                       <li><a href="#"><span><b>HOME</b></span></a></li>
+                       <li><a href="#"><span><b>WELCOME</b></span></a></li>
+                       <li><a href="#"><span><b>OFFER</b></span></a></li>
+                       <li><a href="#"><span><b>STAY</b></span></a></li>
+                       <li><a href="#"><span><b>EXPERIENCE</b></span></a></li>
+                       <li><a href="#"><span><b>CELEBRATE</b></span></a></li>
+                   </ul>
+               </div>
+               <div class="menuWrap_right">
+                  <ul class="fam_site">
+                      <li class="en_1"><a href="#"><span><b>FAMLIY SITE</b></span></a></li>
+                      <li><a href="#"><span><b>호텔현대 바이 라한 울산</b></span></a></li>
+                      <li><a href="#"><span><b>호텔현대 바이 라한 목표</b></span></a></li>
+                      <li><a href="#"><span><b>라한호텔 포항</b></span></a></li>
+                      <li><a href="#"><span><b>라한호텔 전주</b></span></a></li>
+                      <li><a href="#"><span><b>라한 호텔</b></span></a></li>
+                  </ul>
+                  <div class="follow en_1">
+                      <p>FOLLOW US</p>
+                      <a href="#"><span><b><i class="fa fa-facebook" aria-hidden="true"></i></b></span></a>
+                      <a href="#"><span><b><i class="fa fa-instagram" aria-hidden="true"></i></b></span></a>
+                  </div>
+               </div>
+           </div> 
+           <!--//menuOpen-->
+      
+            <div class="book en">
+                <a href="#">Book now</a>
             </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__menu__item active" data-link="#home">Home</li>
-                    <li class="navbar__menu__item" data-link="#about">About</li>
-                    <li class="navbar__menu__item" data-link="#skills">Skills</li>
-                    <li class="navbar__menu__item" data-link="#work">My works</li>
-                    <li class="navbar__menu__item" data-link="#contact">Contact</li>
+            <ul class="langs en_1">
+                <li><a href="#">kor</a></li>
+                <li><a href="#">Eng</a></li>
+            </ul>
+            <ul class="right">
+                <li class="tel">
+                    <p>통합 예약실 1644-8005</p>
+                </li>
+                <li>
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="">
+                            <img src="images/logo1.png" alt="">
+                        </a>
+                    </h1>
+                </li>
+            </ul>
+        </header>
+        
+        <!--visual-->
+        <section class="visual">
+          <!--슬라이드--> 
+          <ul class="slide">
+              <li>
+                  <img src="images/visual_01.jpg" alt="">
+                  <div class="mainText">
+                      <strong>폴 인 라한모던트</strong>
+                      <p>목포에 붉은 가을빛이 <br>완연하게 물들었습니다. <br>일상은 잠시 잊고 다도해의 <br>수려한 풍경 속으로 <br>특별한 남도 여행을 떠나보세요.</p>
+                      
+                      <div class="num en_1">
+                          0 <span>1</span>
+                      </div>
+                      <div class="message">
+                          <p>a balanced life<br>style</p>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <img src="images/visual_02.jpg" alt="">
+                  <div class="mainText">
+                      <strong>폴 인 라한모던트</strong>
+                      <p>목포에 붉은 가을빛이 <br>완연하게 물들었습니다. <br>일상은 잠시 잊고 다도해의 <br>수려한 풍경 속으로 <br>특별한 남도 여행을 떠나보세요.</p>
+                      
+                      <div class="num en_1">
+                          0 <span>2</span>
+                      </div>
+                      <div class="message">
+                           <p>Enjoy exquisite<br>journey</p> 
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <img src="images/visual_03.jpg" alt="">
+                  <div class="mainText">
+                      <strong>폴 인 라한모던트</strong>
+                      <p>목포에 붉은 가을빛이 <br>완연하게 물들었습니다. <br>일상은 잠시 잊고 다도해의 <br>수려한 풍경 속으로 <br>특별한 남도 여행을 떠나보세요.</p>
+                      
+                      <div class="num en_1">
+                          0 <span>3</span>
+                      </div>
+                      <div class="message">
+                           <p>For delightuful<br>stay </p> 
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <img src="images/visual_04.jpg" alt="">
+                  <div class="mainText">
+                      <strong>폴 인 라한모던트</strong>
+                      <p>목포에 붉은 가을빛이 <br>완연하게 물들었습니다. <br>일상은 잠시 잊고 다도해의 <br>수려한 풍경 속으로 <br>특별한 남도 여행을 떠나보세요.</p>
+                      
+                      <div class="num en_1">
+                          0 <span>4</span>
+                      </div>
+                      <div class="message">
+                            <p>Take authentic<br>pleasure </p> 
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <img src="images/visual_05.jpg" alt="">
+                  <div class="mainText">
+                      <strong>폴 인 라한모던트</strong>
+                      <p>목포에 붉은 가을빛이 <br>완연하게 물들었습니다. <br>일상은 잠시 잊고 다도해의 <br>수려한 풍경 속으로 <br>특별한 남도 여행을 떠나보세요.</p>
+                      
+                      <div class="num en_1">
+                          0 <span>5</span>
+                      </div>
+                      <div class="message">
+                            <p>a balanced life<br>style</p> 
+                      </div>
+                  </div>
+              </li>
+          </ul> 
+          <!--비주얼의 공통하단 메뉴-->
+          <ul class="menu en">
+              <li>
+                  <span><i class="fa fa-credit-card" aria-hidden="true"></i>Check in</span>
+              </li>
+              <li>
+                  <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Check out</span>
+              </li>
+              <li>
+                  <a href="#"><p class="en">Book now</p></a>
+              </li>
+          </ul>
+        </section>
+        
+        <!--introduce-->
+        <section class="introduce">
+            <div class="title animate" data-animate="motion">
+                <p>침구 소재서부터 메트리스의 강도, 조명설계,<br>
+                        가구배치와 어메니티 구성 등<br>
+                        고객의 편안한 휴식을 위한 다양한 고민 끝에 완성된 객실에서<br>
+                        최상의 휴식을 경험해 보십시오.</p>
+            </div>
+            <div class="roomInfo animate" data-animate="motion">
+                <ul class="tab">
+                    <li class="on"><a href="#"><span>deluxe double</span></a></li>
+                    <li><a href="#"><span>deluxe twin</span></a></li>
                 </ul>
-
-                <!-- Toggle button -->
-                <button class="navbar__toggle-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-        </nav>
-
-        <!-- Home -->
-        <section id="home">
-            <div class="home__container">
-                  <img src="imgs/profile.jpg" alt="Eunseo's profile photo" class="home__avatar" />
-                  <h1 class="home__title">Hello, :) <br />I'm Eunseo.</h1>
-                  <h2 class="home__minititle">Frontend-engineer 고은서</h2>
-                 <button class="home__contact" data-link="#contact">Conact Me</button>
+                <div class="tabBox on">
+                  <div class="deluxe">
+                      <div class="photo">
+                          <img src="images/deluxe_01.jpg" alt="디럭스1">
+                          <div class="showBox en_1">
+                              <a href="#">
+                                  <p class="name">DELUXE <br>ONDOL</p>  
+                              </a>
+                              <a href="" class="btn">View more</a>
+                          </div>
+                      </div>
+                      <div class="txtinfo">
+                          <div class="titBox">
+                              <h3 class="en_1">DELUXE DOUBLE</h3>
+                              <p>고풍스러운 인테리어에 아늑함이 더해진 디럭스<br>
+                                 온돌룸에서 보다 편안한 휴식을 경험해 보시기<br>
+                               바랍니다.</p>
+                          </div>
+                          <ul class="inner_detail">
+                              <li>
+                                  <span>Capacity</span>
+                                  <p>2인(최대 4인)</p>
+                              </li>
+                              <li>
+                                  <span>Rooms</span>
+                                  <p>침실 1, 욕실 1, 화장실 1</p>
+                              </li>
+                              <li>
+                                  <span>Bed</span>
+                                  <p>침대</p>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>                 
+                </div>
+                <!--두번째 탭박스-->
+                <div class="tabBox">
+                  <div class="deluxe">
+                      <div class="photo">
+                          <img src="images/twin_01.jpg" alt="디럭스1">
+                          <div class="showBox en_1">
+                              <a href="#">
+                                  <p class="name">DELUXE <br>ONDOL</p>  
+                              </a>
+                              <a href="" class="btn">View more</a>
+                          </div>
+                      </div>
+                      <div class="txtinfo">
+                          <div class="titBox">
+                              <h3 class="en_1">DELUXE DOUBLE</h3>
+                              <p>고풍스러움이 느껴지는 스취트 온돌룸은 한국 온돌<br>
+                                 특유의 편안함과 안락함을 선사합니다.</p>
+                          </div>
+                          <ul class="inner_detail">
+                              <li>
+                                  <span>Capacity</span>
+                                  <p>2인(최대 8인)</p>
+                              </li>
+                              <li>
+                                  <span>Rooms</span>
+                                  <p>침실 1, 욕실 1, 화장실 1</p>
+                              </li>
+                              <li>
+                                  <span>Bed</span>
+                                  <p>온돌</p>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>                 
+                </div>
             </div>
         </section>
-
-        <!-- About -->
-        <section id="about" class="section section__container">
-            <h1>About Me</h1>
-            <p>새로운 기술을 배우는 열정을 가지고 계속 진보하고 나아가며,<br>커뮤니케이션 역량이 있는 프론트엔드 개발자 입니다.<br><br>Css 및 JavaScript를 활용하여 동적 웹사이트를 구현하는 것을 좋아하며, <br>유지보수를 고려한 코드 작성, 웹 표준을 바탕으로 꼼꼼한 시멘틱 마크업을 작성합니다.</p>
+        <!--section.offer-->
+        <section class="offer en_1">
+            <h2 class="animate" data-animate="motion">offer</h2>
+            <a href="#" class="findBtn animate" data-animate="motion">Find out more</a>
+            <ul class="new">
+              <li class="animate" data-animate="motion">
+                 <p class="img">
+                    <a href="#"><img src="images/offer_01.jpg" alt=""></a>
+                 </p>
+                 <span>2020.10.21~ 2020.10.31</span>
+                 <h3>[콜라보]컬러링 엽서 키드 증정 프로모션</h3>
+                 <p class="hashTag">라한호텔 X 하비풀이 선보이는 '호텔에서 가을 안부 전하기'#컬러링엽서키트 #취미호캉스 #선착순한정이벤트</p>
+                 <a href="#">View more</a>
+              </li> 
+              <li class="animate" data-animate="motion">
+                 <p class="img">
+                    <a href="#"><img src="images/offer_02.jpg" alt=""></a>
+                 </p>
+                 <span>2020.09.01 ~ 2020.09.30</span>
+                 <h3>[늦캉스] LATE SUMMER</h3>
+                 <p class="hashTag">오션뷰 디럭스룸 + 목포해상케이블카 2인 + 레이트 체크아웃 1시간 ■ 142,000원부터 #늦캉스 #목포해상케이블카 #오션뷰</p>
+                 <a href="#">View more</a>
+              </li>  
+              <li class="animate" data-animate="motion">
+                 <p class="img">
+                    <a href="#"><img src="images/offer_03.jpg" alt=""></a>
+                 </p>
+                 <span>2020.01.01 ~ 2020.12.31</span>
+                 <h3>[B&B] 남도 미식여행</h3>
+                 <p class="hashTag">디럭스룸 + 조식 2인 + 맛집제휴혜택 ■ 137,000원부터 #남도미식여행 #목포맛집탐방 #관광지할인혜택제공</p>
+                 <a href="#">View more</a>
+              </li>
+              <li class="animate" data-animate="motion">
+                 <p class="img">
+                    <a href="#"><img src="images/offer_04.jpg" alt=""></a>
+                 </p>
+                 <span>2020.01.01 ~ 2020.12.31</span>
+                 <h3>[이색] 목포 레트로 여행</h3>
+                 <p class="hashTag">디럭스룸 1박 + 조식 2인 + 흑백사진 촬영권 + 옛날단팥빵/추억의 간식/공기놀이 + 레트로 지도 ■ 154,000원 부터 / #요즘대세 #레트로 #목포여행</p>
+                 <a href="#">View more</a>
+              </li>   
+            </ul>
+        </section>
+        <!--section.dining-->
+        <section class="intro_dining">
+            <ul class="slide2">
+                <li>
+                    <img src="images/picture_01.jpg" alt="">
+                    <div class="slide_txt">
+                        <h3>HAVANA</h3>
+                        <p>다양한 엔터테인먼트 시설을 갖추고 있는 클럽<br>
+                       하바나에서 일상의 분주함을 벗어나 유쾌한 재충전의<br>
+                       시간을 가져보시기 바랍니다.</p>
+                       <a href="#">View more</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/picture_02.jpg" alt="">
+                    <div class="slide_txt">
+                        <h3>TOPAZ</h3>
+                        <p>감각적이고 모던한 스타일의 인테리어와 유리창<br>
+                       밖으로 펼쳐지는 다도해의 아름다운 풍경이 감동을<br>
+                       선사하는 뷔페 레스토랑 '토파즈'에서 남도 미각의<br>
+                       향연을 즐겨보시기 바랍니다.</p>
+                       <a href="#">View more</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/picture_03.jpg" alt="">
+                    <div class="slide_txt">
+                        <h3>SARA</h3>
+                        <p>옛 신라시대 고어로 '마음'을 뜻하는 '사라'는 통유리<br>
+                       창 밖으로 다도해으 아름다운 풍경이 그림처럼<br>
+                       펼쳐지는 모던하고 세련된 인테리어의 커피숍입니다.</p>
+                       <a href="#">View more</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/picture_04.jpg" alt="">
+                    <div class="slide_txt">
+                        <h3>THE SHOP</h3>
+                        <p>매일 아침 더 샵에서 전해저 오는 신선함 베리커리의 <br>
+                       향기. 제과장이 정성껏 구워낸 프리미엄 베이커리들<br>
+                       비롯해 다양한 그로서리 제품과 아인 등을 구입하실<br>
+                       수 있습니다.</p>
+                       <a href="#">View more</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="intro_diningTxt animate" data-animate="motion">
+                <h3>남도의 맛과 다도해의<br>
+                   아름다운 풍경을 동시에 만끽할 수 있는<br>
+                   호텔현대 목포에서 특별한 다이닝을<br>
+                   경험해보시기 바랍니다.</h3>
+                 <p class="bottomTxt">
+                    The best taste<br>
+                    in Morpo<br>
+                   Feast of various taste
+                 </p>  
+            </div>
+        </section>
+        <!--section.greetings-->  
+        <section class="greetings">
+            <h2>Welcome to LAHAN</h2>
+            <h3 class="greetingIntro">
+                다도해와 영암호의 수려한 풍경이<br>
+                눈 앞에서 펼쳐지는 호텔현대 목포는<br>
+                서남권을 대표하는 특급 호텔로 레저와 비즈니스를 위한<br>
+                다양한 시설과 품격 있는 서비스를<br>
+                제공합니다. 
+            </h3>
+            <a href="#">View more</a>
+       </section>
+       <!--section.news_notice-->
+       <section class="news_notice">
+           <div class="title_wrap">
+               <div class="inner">
+                   <p class="news_title">Notice & news <a href="#" class="tindBtn">Find out more</a></p>
+               </div>
+           </div>
+           <div class="notice_list animate" data-animate="motion">
+               <ul>
+                   <li>
+                       <span class="data  en">6/29</span>
+                       <div class="textBox">
+                           <strong>부대 시설 운영 안내</strong>
+                           <p class="list_txt">
+                               코로나19 이슈로 인하여 호텔현대 바이 라한 목포 내 호텔 부대시설이 변경 운영될 예정이오니 참고 부탁드리겠습니다. 변경일정 : 2020.07.01~ 문의 : 061.463.2233 [토파즈] * 7/1 ~ 7/17, 8/17 ~ 8/31
+                           </p>
+                           <a href="#" class="more">View more</a>
+                       </div>
+                   </li>
+                   <li>
+                       <span class="data  en">9/18</span>
+                       <div class="textBox">
+                           <strong>이전 개인정보처리방침 안내</strong>
+                           <p class="list_txt">
+                               [개인정보 처리방침 변경이력] -2019년 2월 20일 : 홈페이지 구축 후 제정 및 공지 -2019년 9월 5일 : 2차 개정 01통합
+                           </p>
+                           <a href="#" class="more">View more</a>
+                       </div>
+                   </li>
+                   <li>
+                       <span class="data  en">6/29</span>
+                       <div class="textBox">
+                           <strong>(주)라한호텔 제 19기 결산공고 재무상태표</strong>
+                           <p class="list_txt">
+                               제 19기 재무제표는 웆요성의 고나점에서 한국채택국제회계처리기준에 따라 공정하게 표시하고 있습니다
+                               길동회계법인 대표 홍길동
+                           </p>
+                           <a href="#" class="more">View more</a>
+                       </div>
+                   </li>
+               </ul>
+           </div>
+       </section>
+       <!--section.club_banner-->
+       <section class="club_banner">
+           <div class="inner animate" data-animate="motion">
+               <h3 class="en"> Exclusive privileges<br>of CLUB LAHAN</h3>
+               <a href="#" class="more">View more</a>
+           </div>
+       </section>
        
-        <div class="about__major">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <h2 class="major__title">Html5</h2>
-                <div class="major__description">
-                    
-                </div>                   
-            </div>
-
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                </div>
-                <h2 class="major__title">Css3</h2>
-                <div class="major__description">
-                    
-                </div>                   
-            </div>
-
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-node-js" aria-hidden="true"></i>
-                </div>
-                <h2 class="major__title">JavaScript</h2>
-                <div class="major__description">
-                    
-                </div>                   
-            </div>
-            </div>
-            <div class="about__jobs">
-                <div class="job">
-                     <div class="job__description">
-                        
-                        <p class="job__name"><i class="fas fa-check"></i> 성결대학교 멀티미디어공학과 학사 (2013 Mar ~ 2018 Feb)</p>
-                        <!--<p class="job_period">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>-->
-                    </div>
-                </div>
-                <div class="job">
-                    <div class="job__description">
-                        <p class="job__name"><i class="fas fa-check"></i> KH정보교육원 [NCS] 응용SW엔지니어 및 DB엔지니어 양성과정 (2017 July ~ 2018 Jan)</p>
-                        <!--<p class="job_period">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>-->
-                    </div>
-                </div>
-                <div class="job">
-                    <div class="job__description">
-                        <p class="job__name"><i class="fas fa-check"></i> (주)리서치퍼스트 온라인 웹 및 모바일 설문 프로그래밍(2018 Apr ~ 2020 Oct)</p>
-                        <!--<p class="job_period">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>-->
-                    </div>
-                </div>
-            </div>
-        
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="section">
-            <div class="section__container">
-            
-            
-            <h1>Skills</h1>
-            <h2>Skills & Attributes</h2>
-            <p>
-                저의 강점은 책임감을 가지고 직무 수행을 하며,
-                <br>프로젝트 목표를 제대로 이해하고 철저한 계획 및 일정을 통해 프로젝트 관리가 가능합니다.
-                <br><br>
-                다양한 환경에 반응하도록 디자인과 UX를 구현하고,
-                <Br>더 많은 사용자들이 접근하기 편한 웹사이트를 만들기 위해 노력하겠습니다.
-                <Br><br>
-                또한, 프로젝트 기획 및 디자인을 존중하며 협업을 위한 지식을 배우고 적용하며 공유하겠습니다.
-            </p>
-            <div class="skillset">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">Skills</h3>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 99%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>CSS</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>JAVASCRIPT</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>TIMESCRPIT</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>REACT</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>NODE.JS</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillset__right">
-                  <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Visual Studio Code</span></li>
-                        <!--<li><span>IntelliJ</span></li>
-                        <li><span>Android Studio Code</span></li>
-                        <li><span>Eclips</span></li>-->
-                    </ul>
-                  </div>
-                  <div class="etc">
-                    <h3 class="skillset__title">Etc</h3>
-                        <ul class="etc__list">
-                            <li><span>Git</span></li>
-                            <li><span>PhotoShop</span></li>
-                            <li><span>Illustrater</span></li>
-                        </ul>
-                  </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        
-        <!-- Work -->
-        <section id="work" class="section">
-          <div class="section__container">
-                <h1>My work</h1>
-                <h3>Projects</h3>
-                <div class="work__categories">
-                    <button class="category__btn selected" data-filter="*">ALL <span class="category_count">8</span></button>
-                    <button class="category__btn" data-filter="front-end">Front-end <span class="category_count">3</span></button>
-                    <button class="category__btn" data-filter="back-end">Back-end <span class="category_count">2</span></button>
-                    <button class="category__btn" data-filter="mobile">Mobile <span class="category_count">2</span></button>
-                </div>
-                
-                <div class="work__project">
-                    <a href="https://github.com/eseo128/spring_1" class="project" target="blank" data-type="front-end">
-                        <img class="project__img" src="imgs/projects/project1.png" alt="Youtube">
-                        <div class="project__description">
-                            <h3>Youtube Site</h3>
-                            <span>Clone Coding with HTML and CSS</span>
-                        </div>
-                    </a>
-                    <a href="https://github.com/eseo128/spring_1" class="project" target="blank" data-type="front-end">
-                        <img class="project__img" src="imgs/projects/project2.png" alt="Youtube">
-                        <div class="project__description">
-                            <h3>Youtube Site</h3>
-                            <span>Clone Coding with HTML and CSS</span>
-                        </div>
-                    </a>
-                    <a href="https://github.com/eseo128/spring_1" class="project" target="blank" data-type="front-end">
-                        <img class="project__img" src="imgs/projects/project3.png" alt="Youtube">
-                        <div class="project__description">
-                            <h3>Youtube Site</h3>
-                            <span>Clone Coding with HTML and CSS</span>
-                        </div>
-                    </a>
-                    <a href="https://www.notion.so/4-Concepts-4f4dd170b60043b081320d91d0cdc45f" class="project" target="blank" data-type="back-end">
-                        <img class="project__img" src="imgs/projects/4c_img.png" alt="Youtube">
-                        <div class="project__description">
-                            <h3>4 Concepts</h3>
-                            <span>퍼스널 컬러 화장품 웹 사이트</span>
-                        </div>
-                    </a>
-                    <a href="https://www.notion.so/TEATRO-c1ff918ca417461ebd8b9c3ba37632ee" class="project" target="blank" data-type="back-end">
-                        <img class="project__img" src="imgs/projects/teatro_img.png" alt="Youtube">
-                        <div class="project__description">
-                            <h3>TEATRO</h3>
-                            <span>연극 예매 사이트</span>
-                        </div>
-                    </a>
-                    
-                    <a href="https://github.com/eseo128/spring_1" class="project" target="blank" data-type="mobile">
-                        <img class="project__img" src="imgs/projects/project7.png" alt="Youtube">
-                        <div class="project__description">
-                            <h3>Youtube Site</h3>
-                            <span>Clone Coding with HTML and CSS</span>
-                        </div>
-                    </a>
-                    <a href="https://github.com/eseo128/spring_1" class="project" target="blank" data-type="mobile">
-                        <img class="project__img" src="imgs/projects/project8.png" alt="Youtube">
-                        <div class="project__description">
-                            <h3>Youtube Site</h3>
-                            <span>Clone Coding with HTML and CSS</span>
-                        </div>
-                    </a>
-                </div>
-          </div>
-        </section>
-        
-        <!-- Testimonials -->
-<!--       <section id="testimonials" class="section">
-         <div class="section__container">
-                <h1>Testimonials</h1>
-                <h3>See what they say about me</h3>
-                <div class="testimonials">
-                    <div class="testimonial">
-                        <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar" />
-                        <div class="testimonial__speech-bubble">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sapiente. Atque, maxime impedit? Nam
-                                aperiam, dolores natus est nulla ab quaerat dignissimos rem ducimus ipsam incidunt dolorem quidem
-                                molestias magni!</p>
-                            <p class="name"><a href="">Eunseo</a> / Samsung</p>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <div class="testimonial__speech-bubble">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sapiente. Atque, maxime impedit? Nam
-                                aperiam,
-                                dolores natus est nulla ab quaerat dignissimos rem ducimus ipsam incidunt dolorem quidem molestias
-                                magni!
-                            </p>
-                            <p class="name"><a href="">Eunseo</a> / Samsung</p>
-                        </div>
-                        <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar" />
-                
-                    </div>
-                </div>
-         </div>
-        </section>-->
-        
-        <!-- Contact -->
-        <section id="contact" class="section">
-            <h1 class="contact__title">Let's talk</h1>
-            <h2 class="contact__email">eseo128@naver.com</h2>
-            <div class="contact__links">
-                <a href="https://github.com/eseo128" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-            <p class="contact__rights">
-                2021 Coding EUNSEO - All rights reserved
-            </p>
-        </section>
-
-        <!-- backBtn-->
-        <button class="backBtn">
-            <i class="fas fa-arrow-up"></i>
-        </button>
+           <!--footer-->
+       <footer>
+           <div class="foot_inner">
+               <h2 class="logo"><img src="images/logo2.png" alt="푸터로고"></h2>
+               <ul class="contact_area">
+                   <li>
+                       <p class="adrress">전라남도 영암군 삼호읍 대불로 91</p>
+                       <p class="mail"><a href="#"><span>E</span> mokpoA123.com</a></p>
+                       <p class="tel"><a href="#"><span>T</span> +82.123.1231(행사문의)</a></p>
+                   </li>
+                   <li>
+                      <p><a href="#">Barnd Story</a></p> 
+                      <p><a href="#">Club Lahan</a></p> 
+                   </li>
+                   <li>
+                       <p><a href="#">Notice</a> </p>
+                       <p><a href="#">Contact</a></p>
+                       <p><a href="#">Career</a></p>     
+                   </li>
+                   <li>
+                      <p><a href="#">오시는길</a></p> 
+                      <p><a href="#">개인정보처리방침</a></p> 
+                      <p><a href="#">영상 정보처리기기 운영.관리방침</a></p> 
+                      <p><a href="#">윤리경영</a></p> 
+                      <p><a href="#">제안/제보</a></p> 
+                   </li>
+               </ul>
+               <div class="footer_right">
+                   <ul class="icon">
+                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                       <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                       <li><a href="#"><img src="images/btn_kakao.png" alt="카카오톡"></a></li>
+                   </ul>
+                   <div class="fam_site_wrap">
+                       <div class="txt_wrap">
+                           <button type="button" class="btn_fam">
+                               <span class="fma_sit_tit">Family Site</span>
+                               <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                           </button>
+                       </div>
+                       <ul class="item_wrap">
+                           <li><a href="#">LAHAN</a></li>
+                           <li><a href="#">Gyeongju</a></li>
+                           <li><a href="#">ulsan</a></li>
+                           <li><a href="#">Mokpo</a></li>
+                           <li><a href="#">Pohang</a></li>
+                       </ul>
+                       <div class="copy">
+                           <p class="txt">
+                             ⓒ 2019 by Lahan Hotels Co., Ltd.  
+                           </p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </footer>
+           
+    </div>
 </body>
 </html>
