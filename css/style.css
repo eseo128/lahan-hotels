@@ -321,6 +321,7 @@ header .right li .logo a img:nth-child(2) {
 .visual .slide .mainText .message {
   font-size: 26px;
   line-height: 1.2;
+  margin-top: -20px;
 }
 
 /* 비주얼 공통 하단 메뉴 */
@@ -831,3 +832,51 @@ header .right li .logo a img:nth-child(2) {
   line-height: 1.6;
 }
 
+/* intro_dining .slick-active */
+.intro_dining .slide2 .slick-active .slide_txt h3{
+  animation: slide-up2 0.6s;
+}
+
+.intro_dining .slide2 .slick-active .slide_txt p{
+  animation: slide-up2 1.0s;
+}
+
+.intro_dining .slide2 .slick-active .slide_txt a{
+  animation: slide-up2 1.2s;
+}
+
+.intro_dining .intro_diningTxt .motion h3{
+  animation: slide-up2 2s;
+}
+
+/* section.greeting */
+
+.greetings{
+  width: 100%;
+  text-align: center;
+  margin: 100px 0 100px;
+
+}
+
+.greetings h2{
+  font-size: 17px;
+  font-weight: normal;
+  color: #a68164;
+  margin-bottom: 60px;
+}
+
+.greetings h3{
+  font-size: 32px;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.greetings a{
+  display: block;
+  width: 150px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #a68164;
+  padding: 12px 20px;
+}
