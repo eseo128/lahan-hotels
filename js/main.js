@@ -50,5 +50,12 @@ $(function() {
 		mobile: true, //모바일버전시 활성화
 		once: false //스크롤시 딱 한번만 하고싶을땐 true
 	});    
-      }); 
+});
+      
+//패밀리사이트
+$(function () {
+    $('.txt_wrap .btn_fam').on('click', function () {
+        $('.fam_site_wrap .item_wrap').slideToggle();
+    });
+});
 
