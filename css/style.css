@@ -290,6 +290,10 @@ header {
   transition: all 0.5s;
 }
 
+header.on{
+  background: rgba(96,77,62,0.3);
+}
+
 header .menuOpen {
   display: inline-block;
   position: absolute;

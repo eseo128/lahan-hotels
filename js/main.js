@@ -70,3 +70,20 @@ $(function(){
     });
 });
 
+//헤더 이벤트
+var scrollTop = 0;
+scrollTop = $(document).scrollTop();
+
+$(window).on('scroll resize', function () {
+    scrollTop = $(document).scrollTop();
+    fixHeader();
+})
+
+function fixHeader() {
+    if (scrollTop > 200) {
+        $('header').addClass('on');
+    } else {
+        $('header').removeClass('on');
+    }
+}
+
