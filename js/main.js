@@ -59,3 +59,14 @@ $(function () {
     });
 });
 
+//햄버거 버튼
+$(function(){
+    $('header .menuOpen').on('click', function(){
+        $('header .menuWrap').addClass('on');
+    });
+
+    $('.menuWrap .close').on('click', function(){
+        $('header .menuWrap').removeClass('on');   
+    });
+});
+
