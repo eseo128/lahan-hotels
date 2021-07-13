@@ -6,7 +6,7 @@
 
 - 동적 페이지
 - 다양한 애니메이션 효과
-- 햄버거 버튼 클릭시 메뉴 효과Cancel changes
+- 햄버거 버튼 클릭시 메뉴 효과
 - 스크롤 시 fix header
 - 배포 사이트 : https://eseo128.github.io/lahan-hotels/
 
