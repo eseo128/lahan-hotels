@@ -22,8 +22,9 @@
     
 # Acknowledgements
 - <a href="https://fontawesome.com/">Font Awesome</a>
-
-
+- <a href="https://fonts.gstatic.com/">google fonts</a>
+- scrolla.jquery.min.js
+- slick.min.js
 
 
 
