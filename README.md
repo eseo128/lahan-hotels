@@ -15,6 +15,7 @@
 
 - 스크롤 시 fix header
 - family site 클릭 시 옵션 제시
+    
     ![image](https://user-images.githubusercontent.com/34049770/126148440-a56e623b-6f03-4c22-8b7e-ace8cb155739.png)
 
 - 배포 사이트 : https://eseo128.github.io/lahan-hotels/
