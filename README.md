@@ -1,5 +1,6 @@
 # lahan hotels 사이트 만들기
 - 라한호텔 사이트를 HTML 마크업부터 CSS 및 Javascript까지 직접 완성한다.
+- 배포 사이트 : https://eseo128.github.io/lahan-hotels/
 
 # Tool Stack
 <p>
@@ -18,8 +19,7 @@
     
     ![image](https://user-images.githubusercontent.com/34049770/126148440-a56e623b-6f03-4c22-8b7e-ace8cb155739.png)
 
-- 배포 사이트 : https://eseo128.github.io/lahan-hotels/
-    
+
 # Acknowledgements
 - <a href="https://fontawesome.com/">Font Awesome</a>
 - <a href="https://fonts.gstatic.com/">google fonts</a>
